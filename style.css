@@ -10,7 +10,12 @@
 body a{
     text-decoration: none;
 }
-
+header{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white; 
+}
 .search-bar{
     background-color: rgb(214, 227, 254);
     border-radius: 10px;
@@ -24,6 +29,17 @@ body a{
 }
 ::-webkit-scrollbar{
     display: none;
+}
+#container-slider{
+    position: relative;
+}
+#arrow_left{
+    position: absolute;
+    left:0 ;
+}
+#arrow_right{
+    position: absolute;
+    right: 0;
 }
 
 /* --second main part-- */

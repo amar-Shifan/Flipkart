@@ -2,38 +2,30 @@
 
 
 let count = 0;
+let image2 = "https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/f871c3dec2984ff3.jpeg?q=20";
+let image3 = "https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/b35a105fe8bc8cbb.png?q=20";
 
 let tempcount = 0; 
 let right_arrow = document.getElementById('arrow_right');
 let left_arrow = document.getElementById('arrow_left');
 
-function arrow(right,left){
-    
-    let mainContainer = document.getElementById("container-slider");
+function arrow(direction){
 
-    
-    if(right){
-        count += window.innerWidth;
+
+    let div = document.getElementById('container-slider');
+    let image = document.getAnimations('image');
+    console.log(image);
+
+    console.log(div);
+
+    if(direction){
+        console.log("its right");
         
-        tempcount ++;
-        if (tempcount >0){
-            right_arrow.style.opacity = 0;
-            left_arrow.style.opacity = 1;
-        }
-        mainContainer.scrollTo({top: 0, left: count, behavior: "smooth" });
+        image.src = "/mobile.png";
 
     }else{
-        
-        count -= window.innerWidth;
-        tempcount--;
-
-        if (tempcount <=0){
-            right_arrow.style.opacity = 1;
-            left_arrow.style.opacity = 0;
-        }
-    mainContainer.scrollTo({top:0, left: count, behavior: "smooth" });
-
+        console.log("its left");
+        image.src = image3
     }
-    
-
 }
+
