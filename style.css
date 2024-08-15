@@ -86,8 +86,30 @@ header{
     right: 0;
     z-index: 1;
 }
-
-
+.login{
+    position: relative;
+}
+.popup{
+    height: 250px;
+    width: 200px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px gray;
+    border-radius: 5px;
+    display: none;
+    
+}
+.popup p{
+    transition: 1s ease;
+}
+.popup p:hover{
+    transform: scale(1.09);
+}
 .mobile-container ul{
     overflow: scroll;
     position: relative;

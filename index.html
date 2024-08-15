@@ -33,7 +33,19 @@
         </div>
         <div class="col-md-4 col-sm-2  d-flex justify-content-evenly col-8">
             
-            <div class=" p-md-3  d-flex gap-2 align-items-center"><i class="fa-solid fa-user"></i><span role="button" tabindex="0" >Login</span><i class="fa-solid fa-angle-down d-none d-md-flex"></i></div>
+            <div class=" login p-md-3  d-flex gap-2 align-items-center">
+                <i class="fa-solid fa-user"></i>
+                <span role="button" tabindex="0" onclick="popUp()">Login</span>
+                <i class="fa-solid fa-angle-down d-none d-md-flex"></i>
+                <div class="popup " id="div">
+                    <div class="">
+                        <p>My profile</p>
+                        <p>My orders</p>
+                        <p>Wishlets</p>
+                        <p>Rewards</p>
+                    </div>
+                </div>
+            </div>
             <div class=" p-md-3  d-flex gap-2 align-items-center"><i class="fa-solid fa-cart-shopping"></i></i><span class="d-md-flex d-sm-none ">Cart</span></div>
             <div class=" p-md-3  d-md-flex gap-2 d-sm-none d-none align-items-center"><i class="fa-solid fa-shop"></i><span class="d-md-flex d-sm-none">Become a seller</span></div>
             <div class=" p-md-3  d-md-flex d-sm-none align-items-center d-none border rounded"><i class="fa-solid fa-ellipsis-vertical"></i></div>
